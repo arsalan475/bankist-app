@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="user-greeting">
+        <span class="name">Login to get account info</span>
+      </h1>
+
+      <div class="logo-container">
+        <i class="ri-mastercard-line"></i>
+      </div>
+
+      <div class="input-container">
+        <input type="text" name="user-name" id="userName" placeholder="user" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="pin"
+        />
+        <span class="login-btn">&#8594;</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="amount-container">
+        <div class="amount-info">
+          <div class="label">
+            <h2>Current balance</h2>
+            <span class="curDate">3/8/2023</span>
+          </div>
+
+          <h1 class="amount">$25 953,59</h1>
+        </div>
+      </div>
+
+      <div class="all-info">
+        <div class="account-info"></div>
+
+        <div class="trancation-functionality">
+          <div class="transfer-box">
+            <h2>tranfer money</h2>
+            <div class="transfer-input-box">
+              <div class="acc-holder">
+                <input type="text" name="acc" id="transfer-to" />
+                <label for="acc-holder">tranfer to</label>
+              </div>
+
+              <div class="tranfer-amount">
+                <input type="text" name="acc" id="amount-transfer" />
+                <label for="amount-transfer">amount</label>
+              </div>
+
+              <span class="func-btn">&#8594;</span>
+            </div>
+          </div>
+
+          <div class="request-box">
+            <h2>request loan</h2>
+            <div class="request-input-box">
+              <div class="acc-holder">
+                <input type="text" name="acc" id="loan-amount" />
+                <label for="acc-holder">Amount</label>
+              </div>
+              <span class="func-btn">&#8594;</span>
+            </div>
+          </div>
+
+          <div class="delete-box">
+            <h2>close account</h2>
+            <div class="delete-acc-box">
+              <div class="acc-holder">
+                <input type="text" name="acc" id="close-user-name" />
+                <label for="acc-holder">Confirm User</label>
+              </div>
+
+              <div class="delete-acc">
+                <input type="text" name="acc" id="confirm-pin" />
+                <label for="account-number">Confirm Pin</label>
+              </div>
+
+              <span class="func-btn">&#8594;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="in-box">in <span>27.03520 %</span></div>
+            <div class="out-box">out<span>27.03520 %</span></div>
+            <div class="interest-box">interest <span>27.03520 %</span></div>
+            <div class="sort-box" style="cursor: pointer">
+              ⬇<span>sort</span>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="timer-box">
+              you will be logged out in <span class="timer">00:00</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

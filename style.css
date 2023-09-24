@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+
+}
+
+.logo-container i{
+font-size: 2.5vw;
+color: rgb(17, 44, 17);
+}
+
+.input-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.input-container input{
+    width: 6.2vw;
+    height: 2.4rem;
+    border-radius: 100px;
+    border: none;
+text-align: center;    
+font-weight: 500;
+background-color: white;
+}
+
+.login-btn{
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+
+.main{
+    width: 100%;
+ 
+    margin-top: 4rem;
+
+}
+
+.amount-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 2vw 3vw;
+    justify-content: center;
+}
+
+.amount{
+    font-size: 2.5vw;
+}
+
+
+.amount-info{
+    display: flex;
+    width: 63.8%;
+    justify-content: space-between; 
+    align-items:center ;   
+}
+
+
+.amount-info .label h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.all-info{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    gap: 1rem;
+
+}
+
+
+.account-info{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+  
+   margin: 0 auto;
+   gap: .2rem;
+   border-radius: 10px;
+   overflow: auto;
+
+   height: 60vh;
+}
+
+.account-info .trancation-history{
+    display: flex;
+   width: 100%;
+    background-color:white;
+    justify-content: space-between;
+    padding: .7vw 2vw;
+    font-size: .8vw;
+   
+}
+
+.history-label{
+    display: flex;
+    align-items: center;
+    gap:1rem
+}
+
+.trancation-history h1{
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.all-info .trancation-functionality{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    
+  
+}
+
+    .transfer-box{
+        background-color: orange;
+    }
+
+    .request-box{
+        background-color: rgb(42, 204, 42);
+
+    }
+
+    .delete-box{
+        background-color: rgba(184, 44, 1, 0.639);
+    }
+.trancation-functionality .transfer-box, .request-box,.delete-box{
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 1.3vw 1.6vw;
+    padding-bottom:1.4vw ;
+    align-items: center;
+}
+
+.trancation-functionality h2{
+    font-size: 1.5vw;
+}
+
+
+.trancation-functionality label{
+    color: #333;
+
+}
+.request-input-box,.transfer-input-box,.delete-acc-box{
+    display: flex;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1vw;
+    margin-left:-.6rem ;
+    font-weight: 600;
+
+}
+
+.func-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-size: 1vw;
+    font-weight: 700;
+    height: 2vw;
+    background-color: #f7f7f7;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.request-input-box input,.transfer-input-box input,.delete-acc-box input{
+    width:90%;
+    height: 2.1vw;
+    margin-bottom: .4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.629);
+    text-align: center;
+    font-weight: 500;
+    color:#333;
+    font-size: 1vw;
+
+}
+
+
+.request-input-box input{
+    width: 90%;
+}
+
+.request-box label{
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    
+    gap:2rem
+}
+
+.footer-left{
+    display: flex;
+    
+    justify-content: space-between;
+    text-transform: uppercase;
+    width:59%;
+}
+
+.footer-left span{
+    font-size: 1vw;
+    display: inline-block;
+    margin-left:.3rem;
+    font-weight: 700;
+
+}
+
+.footer-right{
+    font-weight: 700;
+    align-items: center;
+}
+
+.main {
+    opacity: 0;
+    transition: opacity 1s ease;
+    
+}
+
+.all-info .trancation-history .deposit{
+    background-color: rgb(122, 240, 154);
+    padding: .3vw .7vw;
+    border-radius:20px ;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 1vw;
+}
+
+.all-info .trancation-history .withDraw{
+    background-color: rgba(255, 0, 0, 0.726);
+    padding: .3vw .7vw;
+    border-radius:20px ;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 1vw;
+}
